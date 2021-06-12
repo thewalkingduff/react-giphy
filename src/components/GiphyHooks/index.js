@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import env from "react-dotenv";
+import process.env from "react-dotenv";
 import axios from 'axios';
 
 
