@@ -59,8 +59,10 @@ input {
 }
 
 img {
-  height: 14rem;
-  width: 14rem;
+  /* height: 14rem;
+  width: 14rem; */
+  height: 185px;
+  width: 237px;
 }
 
 .single-fav-gif {
