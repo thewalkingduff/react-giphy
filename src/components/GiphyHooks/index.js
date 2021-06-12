@@ -40,7 +40,9 @@ const GifHooks = () => {
     const handleSearchGifs = async () => {
         if (!gifInput) return;
 
-        const res = await axios.get(`https://api.giphy.com/v1/gifs/search?&q=${gifInput}&api_key=${env.API_URL}`)
+        const API_URL = process.env.REACT_APP_API_URL
+
+        const res = await axios.get(`https://api.giphy.com/v1/gifs/search?&q=${gifInput}&api_key=${API_URL}`)
 
         console.log(res.data.data)
 
