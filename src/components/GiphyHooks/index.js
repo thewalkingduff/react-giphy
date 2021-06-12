@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import env from "react-dotenv";
 import axios from 'axios';
-
-
 
 const GifHooks = () => {
     const [gifs, setGifs] = useState([])
@@ -40,9 +37,7 @@ const GifHooks = () => {
     const handleSearchGifs = async () => {
         if (!gifInput) return;
 
-        const MY_KEY = env.REACT_APP_API_URL
-
-        const res = await axios.get(`https://api.giphy.com/v1/gifs/search?&q=${gifInput}&api_key=${MY_KEY}`)
+        const res = await axios.get(`https://api.giphy.com/v1/gifs/search?&q=${gifInput}&api_key=9ROb8LSd8uvUcqYY6HFmxullP1FOsXwQ`)
 
         console.log(res.data.data)
 
