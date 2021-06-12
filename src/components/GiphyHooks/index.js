@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import env from "react-dotenv";
 import axios from 'axios';
+
 
 
 const GifHooks = () => {
@@ -38,7 +40,7 @@ const GifHooks = () => {
     const handleSearchGifs = async () => {
         if (!gifInput) return;
 
-        const res = await axios.get(`https://api.giphy.com/v1/gifs/search?&q=${gifInput}&api_key=xaJM8QTIIxH51RG17ImSyuh4xaxUc31N`)
+        const res = await axios.get(`https://api.giphy.com/v1/gifs/search?&q=${gifInput}&api_key=${env.API_URL}`)
 
         console.log(res.data.data)
 
@@ -56,7 +58,7 @@ const GifHooks = () => {
                     return (
                         <div key={index} className="single-fav-gif">
                             <img src={gif.images.fixed_width.url} alt=' ' />
-                            <button className="remove-button" onClick={() => handleRemoveGif(index)} >Remove</button>
+                            <button className="save-remove-button" onClick={() => handleRemoveGif(index)} >Remove</button>
                         </div>
                     )
                 })}
@@ -65,7 +67,7 @@ const GifHooks = () => {
             <section className='search-section'>
                 <h2>SEARCH GIPHYS HERE!</h2>
                 <input onChange={handleInput} value={gifInput} />
-                <button onClick={handleSearchGifs}>SEARCH</button>
+                <button className="search-button" onClick={handleSearchGifs}>SEARCH</button>
             </section>
 
 
@@ -74,7 +76,7 @@ const GifHooks = () => {
                     return (
                         <div key={index} className="single-search-gif">
                             <img src={gif.images.fixed_width.url} />
-                            <button onClick={() => handleSaveGif(gif)}>Save</button>
+                            <button className="save-remove-button" onClick={() => handleSaveGif(gif)}>Save</button>
                         </div>
                     )
                 })}

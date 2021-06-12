@@ -20,24 +20,20 @@ h2 {
 
 .fav-gifs {
   display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 1fr;
-    justify-items: center;
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  justify-items: center;
   padding: 1rem;
   margin: 1rem;
 }
 
 .searched-gifs {
   display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 1fr;
-    justify-items: center;
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  justify-items: center;
   padding: 1rem;
   margin: 1rem;
 }
@@ -48,7 +44,6 @@ button {
   font-family: 'Seymour One', sans-serif;
   padding: 1rem;
   font-size: 1rem;
-  margin: 1rem 5rem;
   border-radius: 4px;
 }
 
@@ -72,17 +67,18 @@ img {
   display: grid;
   align-content: center;
   border: 10px solid #FFE62E;
+  margin: 0 1rem;
 }
 
 .single-search-gif {
   display: grid;
   align-content: center;
-  border: 5px solid #2EE9FF;
+
+  padding: 1rem;
 }
 
-
-.remove-button {
-  align-items: end;
+.save-remove-button {
+  margin-top: 1rem;
 }
 
 .search-section {
@@ -91,6 +87,10 @@ img {
   border: 5px solid #2EE9FF;
   padding-bottom: 2rem;
   margin: 1rem 2rem;
+}
+
+.search-button {
+  margin: 1rem 5rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -105,5 +105,11 @@ img {
   .search-section {
     padding-bottom: 2rem;
     margin: .5rem;
+  }
+  .search-button {
+    margin: 1rem 2rem;
+  }
+  input {
+    margin: 1rem 2rem;
   }
 }
