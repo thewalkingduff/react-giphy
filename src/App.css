@@ -1,38 +1,109 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+body {
+  background: #FF1493;
+  font-family: 'Seymour One', sans-serif;
+}
+
+h1 {
+  color: #2EE9FF;
+  font-size: 4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #2EE9FF;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fav-gifs {
+  display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    justify-items: center;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.searched-gifs {
+  display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    justify-items: center;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  padding: 1rem;
+  margin: 1rem;
+}
+
+button {
+  background: #2EE9FF;
+  color: #000;
+  font-family: 'Seymour One', sans-serif;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem 5rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #FFE62E;
+  transition: .4s;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem 5rem;
+}
+
+img {
+  height: 14rem;
+  width: 14rem;
+}
+
+.single-fav-gif {
+  display: grid;
+  align-content: center;
+  border: 10px solid #FFE62E;
+}
+
+.single-search-gif {
+  display: grid;
+  align-content: center;
+  border: 5px solid #2EE9FF;
+}
+
+
+.remove-button {
+  align-items: end;
+}
+
+.search-section {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 5px solid #2EE9FF;
+  padding-bottom: 2rem;
+  margin: 1rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .search-section {
+    padding-bottom: 2rem;
+    margin: .5rem;
   }
 }
