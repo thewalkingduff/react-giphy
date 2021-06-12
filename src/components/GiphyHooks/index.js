@@ -83,11 +83,6 @@ const GifHooks = () => {
                     )
                 })}
             </div>
-
-
-
-
-
         </div>
     );
 }
