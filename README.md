@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to react-giphy 👋</h1>
-<img src="public/images/my-giphy.png" alt=""><a href="https://main.d2rsrecfjmxxq7.amplifyapp.com/" target="_blank"></a></img>
+<a href="https://main.d2rsrecfjmxxq7.amplifyapp.com/" target="_blank"><img src="public/images/my-giphy.png" alt=""></img></a>
 <p>
   <a href="https://www.npmjs.com/package/react-giphy" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/react-giphy.svg">
