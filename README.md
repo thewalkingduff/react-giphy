@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to react-giphy 👋</h1>
-<a href="https://main.d2rsrecfjmxxq7.amplifyapp.com/" target="_blank"><img src="public/images/my-giphy.png" alt=""></img></a>
+<a href="https://main.djscwh4p60nx1.amplifyapp.com/" target="_blank"><img src="public/images/my-giphy.png" alt=""></img></a>
 <p>
   <a href="https://www.npmjs.com/package/react-giphy" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/react-giphy.svg">
@@ -14,9 +14,9 @@
 
 > A React app to search for and collect your favorite GIPHYs.
 
-### 🏠 [Homepage](https://main.d2rsrecfjmxxq7.amplifyapp.com/)
+### 🏠 [Homepage](https://main.djscwh4p60nx1.amplifyapp.com/)
 
-### ✨ [Demo](https://main.d2rsrecfjmxxq7.amplifyapp.com/)
+### ✨ [Demo](https://main.djscwh4p60nx1.amplifyapp.com/)
 
 ## Install
 
